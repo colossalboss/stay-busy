@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans';
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -35,8 +35,14 @@ nav {
   text-decoration: none;
   color: #474747;
   padding: .5rem 1rem;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1989EB;
   display: block;
+}
+
+.blk-link {
+  color: #000 !important;
 }
 
 .navbar-links ul li:hover {
@@ -64,7 +70,7 @@ nav {
 }
 
 .backg {
-  background-image: url(img/bg.png);
+  background-image: url(https://res.cloudinary.com/rumplestiltskin/image/upload/v1573048004/stay-busy/bg_pfnpns.png);
   background-repeat: no-repeat;
 }
 
@@ -90,6 +96,8 @@ nav {
 
 .box2 img {
   padding-top: 1rem;
+  max-width: 250px;
+  width: 100%;
 }
 
 .flexy h1 {
@@ -112,8 +120,13 @@ nav {
   padding: 5rem 0;
 }
 
+.img-div .image {
+  width: 50%;
+  margin: auto;
+}
+
 .img-div img {
-  height: 410px;
+  width: 100%;
 }
 
 .img-div p {
@@ -138,8 +151,7 @@ nav {
 
 .sm img {
   width: 100%;
-  height: fit-content;
-}
+  }
 
 .btn-div div {
   padding: 2rem 0;
@@ -157,12 +169,12 @@ input {
 
 .circles-div{
   width: 28%;
+  text-align: center;
 }
 
 .round {
   width:100%;
-  height: 124px;
-  background-color: crimson;
+  height: 115px;
   border-radius: 50%;
 }
 
@@ -187,25 +199,52 @@ input {
   display: flex;
 }
 
+.android {
+  width: 50%;
+}
+
+.img-flex img {
+  width: 100%;
+}
+
 .black-bg {
   background-color: #000;
   color: #fff;
 }
 
 .con {
-  padding: 2rem 0;
+  padding: 4rem 0;
+}
+
+.space {
+  margin: 3rem 0;
 }
 
 .txt {
   width: 60%;
 }
 
+.long-txt {
+  font-size: 18px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
 .pic {
   width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.pic img {
+  width: 100%;
 }
 
 .quote {
   font-size: 100px;
+  color: rgba(252, 227, 196, 0.4);
 }
 
 .right {
@@ -299,6 +338,240 @@ footer ul .fa {
   font-size: 14px !important;
 }
 
+.other-txt {
+  text-align: center;
+  color: #fff;
+}
+
+.gallery div {
+  width: 50%;
+  margin: auto;
+}
+
+.gallery div img {
+  width: 100%;
+}
+
+.bg-nxt {
+  background: url(https://res.cloudinary.com/rumplestiltskin/image/upload/v1573045418/stay-busy/bg-nxt_pr7ldj.png);
+}
+
+.pad {
+  padding: 2rem 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.size {
+  width: 80%;
+  margin: auto;
+}
+
+.slider-nav {
+  width: 15%;
+  justify-content: space-around;
+  display: flex;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.slider-nav i {
+  font-size: 50px;
+  font-weight: 100;
+  color: grey;
+}
+
+.slider-nav i:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.normal p {
+  color: #000000;
+  font-weight: lighter;
+}
+
+.bold p {
+  color: #000000;
+  font-weight: bold;
+}
+
+.one {
+  background-color: #fce3c4;
+}
+
+.two {
+  background-color: #0d0d0d;
+}
+
+.three {
+  background-color: #afafaf;
+}
+
+.hamburger {
+  width: 80px;
+  margin: auto;
+}
+
+.mg {
+  margin: 5rem;
+}
+
+.hamburger .bar {
+  width: 80px;
+  height: 6px;
+  margin: 0.5rem;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.angle {
+  height: 64px;
+  width: 67px;
+  background-color: grey;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin: auto;
+}
+
+.ball {
+  height: 64px;
+  width: 67px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.fig {
+  margin: 1rem;
+}
+
+.dark-txt {
+  color: #000 !important;
+}
+
+.long-txt {
+  text-align: justify;
+}
+
+.btn-div input {
+  text-align: center;
+}
+
+.footer-header {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.footer-txt {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.design p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 907px) {
+  .footer-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-item {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .img-div .image img {
+    width: 70%;
+  }
+
+  .flexy {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .flexy,
+  .size {
+    width: 100%;
+  }
+
+  .navbar .nav-con {
+    width: 100%;
+    padding: 1rem 2rem
+  }
+}
+
+@media screen and (max-width: 716px) {
+  .change-flex {
+    flex-direction: column;
+  }
+
+  .box1,
+  .box2,
+  .right {
+    width: 80%;
+    margin: auto;
+  }
+
+  .sm {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .upright {
+    flex-direction: column;
+  }
+  .upright .txt,
+  .upright .pic {
+    width: 80%;
+    margin: auto;
+  }
+
+  .pic div {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .upright .txt {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .triple {
+    flex-direction: column;
+  }
+  .small-img {
+    width: 80%;
+    margin: auto;
+  }
+  .small-flex {
+    flex-direction: column;
+  }
+  .small-flex bg {
+    width: 80%;
+    margin: auto;
+  }
+  .bg {
+    width: 100%;
+  }
+  .btn-div,
+  .btn-div input {
+    text-align: center;
+  }
+  .footer-item {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 560px) {
   .toggle-button {
     display: flex;
@@ -329,5 +602,27 @@ footer ul .fa {
 
   .navbar-links.active {
     display: flex;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .footer-item {
+    width: 100%;
+  }
+
+  .box1 {
+    width: 100%;
+  }
+
+  .box1 h1 {
+    font-size: 40px;
+  }
+
+  .icon-list li {
+    justify-content: flex-start;
+  }
+
+  .slider-nav {
+    width: 33%;
   }
 }

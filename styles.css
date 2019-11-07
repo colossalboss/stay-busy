@@ -143,11 +143,14 @@ nav {
 
 .bg {
   width: 50%;
+  text-align: justify;
 }
 
 .sm {
   width: 42%;
-  height: inherit;
+  /* height: inherit; */
+  display: flex;
+  margin: auto;
 }
 
 .sm img {
@@ -180,7 +183,7 @@ input {
 }
 
 .right {
-  width: 100%;
+  width: 53%;
   text-align: right !important;
 }
 
@@ -255,7 +258,7 @@ input {
   color: rgba(252, 227, 196, 0.6);
 }
 
-.right {
+.right-txt {
   float: right;
 }
 
@@ -278,6 +281,10 @@ input {
   text-align: center;
 }
 
+.justify-txt {
+  text-align: justify;
+}
+
 .footer-items .icon-list {
   display: flex;
   justify-content: space-between;
@@ -292,10 +299,13 @@ input {
   color: #555555;
 }
 
-footer h2,
-footer .direction {
+footer h2 {
   color: #105293;
   text-decoration: none;
+}
+
+footer .direction {
+  color: #105293;
 }
 
 footer ul .fa {
@@ -513,6 +523,24 @@ footer ul .fa {
   }
 }
 
+@media screen and (max-width: 970px) {
+  .small-flex {
+    flex-direction: column;
+  }
+
+  .btn-div div {
+    text-align: left;
+  }
+
+  .right {
+    width: 50%;
+  }
+
+  .bg {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 907px) {
   .footer-items {
     display: flex;
@@ -551,16 +579,23 @@ footer ul .fa {
     flex-direction: column;
   }
 
-  .box1,
-  .box2,
-  .right {
+  .box2 {
     width: 80%;
     margin: auto;
+  }
+
+  .right,
+  .box1 {
+    width: 100%;
   }
 
   .sm {
     width: 60%;
     margin: auto;
+  }
+
+  .btn-div div {
+    text-align: center;
   }
 }
 

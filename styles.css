@@ -72,6 +72,7 @@ nav {
 .backg {
   background-image: url(https://res.cloudinary.com/rumplestiltskin/image/upload/v1573048004/stay-busy/bg_pfnpns.png);
   background-repeat: no-repeat;
+  height: 550px;
 }
 
 .clr {
@@ -577,6 +578,10 @@ footer ul .fa {
 @media screen and (max-width: 716px) {
   .change-flex {
     flex-direction: column;
+  }
+
+  .backg {
+    height: auto;
   }
 
   .box2 {

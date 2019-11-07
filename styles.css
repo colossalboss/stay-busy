@@ -180,7 +180,8 @@ input {
 }
 
 .right {
-  width: 55%;
+  width: 100%;
+  text-align: right !important;
 }
 
 .primary {
@@ -236,7 +237,13 @@ input {
 .pic {
   width: 30%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.polygon2 {
+  width: 10%;
+  margin: 0 0 0 10rem;
 }
 
 .pic img {
@@ -424,10 +431,10 @@ footer ul .fa {
 }
 
 .hamburger .bar {
-  width: 80px;
-  height: 6px;
+  width: 75px;
+  height: 8px;
   margin: 0.5rem;
-  background-color: grey;
+  background: #C4C4C4;
   display: flex;
   flex-direction: column;
 }
@@ -444,7 +451,7 @@ footer ul .fa {
 .ball {
   height: 64px;
   width: 67px;
-  background-color: grey;
+  background: #C4C4C4;
   border-radius: 50%;
   margin: auto;
 }
@@ -479,8 +486,31 @@ footer ul .fa {
   font-weight: 600;
 }
 
+.design-flex {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.design-flex div {
+  margin: 0 0 1rem 0;
+}
+
 .design p {
   font-size: 18px;
+}
+
+.triangle {
+  width: 67px;
+  height: 67px;
+  margin: auto;
+}
+
+@media screen and (min-width: 980px) {
+  .round {
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 907px) {
@@ -544,8 +574,12 @@ footer ul .fa {
     margin: auto;
   }
 
-  .pic div {
+  .pic .auto {
     margin: auto;
+  }
+
+  .polygon2 {
+    margin: 0 0 0 10rem;
   }
 }
 
